@@ -13,7 +13,6 @@ public class Main extends HttpServlet {
       output += "X";
     }
 
-//    resp.addHeader("Content-length", String.valueOf(output.getBytes().length));
     resp.addHeader("Connection", "keep-alive");
     resp.addHeader("Content-Type", "text/plain");
     resp.setContentLength(output.getBytes().length);
